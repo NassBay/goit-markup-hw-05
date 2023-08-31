@@ -542,23 +542,24 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe-box">
-          <div class="subscribe-input">
-            <label for="e-mail" class="subscribe-label"> Subscribe </label>
+         <div class="footer-subscribe-box">
+          <p class="subscribe-label">Subscribe</p>
+          <form class="subscribe-input">
+            <label for=" ">
             <input
-              id="e-mail"
-              name="user-email"
-              type="email"
-              class="input-e-mail"
-              placeholder="E-mail"
+            name="user-email"
+            type="email"
+            class="input-e-mail"
+            placeholder="E-mail"
             />
-          </div>
-          <button type="button" class="footer-button">
-            Subscribe
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#subscribe"></use>
-            </svg>
-          </button>
+            </label>
+            <button type="submit" class="footer-button">
+              Subscribe
+              <svg width="24" height="24" class="subscribe-icon">
+                <use href="./images/icons.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -567,7 +568,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="form-box">
         <button type="button" class="form-close-button" data-modal-close>
-          <svg width="24" height="24">
+          <svg width="12" height="12" class="close-icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
@@ -575,7 +576,7 @@
         <p class="form-title">Leave your contacts and we will call you back</p>
 
         <form class="form">
-          <div>
+          <div class="form-label-box">
             <label for="user-name" class="form-label">Name</label>
             <div class="input-wrap">
               <input id="user-name" name="user-name" type="text" />
@@ -584,7 +585,7 @@
               </svg>
             </div>
           </div>
-          <div>
+          <div class="form-label-box">
             <label for="user-tel" class="form-label">Phone</label>
             <div class="input-wrap">
               <input id="user-tel" name="user-tel" type="tel" />
@@ -593,7 +594,7 @@
               </svg>
             </div>
           </div>
-          <div>
+          <div class="form-label-box">
             <label for="user-email" class="form-label">Email</label>
             <div class="input-wrap">
               <input id="user-email" name="user-email" type="email" />
@@ -602,17 +603,15 @@
               </svg>
             </div>
           </div>
-          <div>
+          <div class="form-textarea-box">
             <label for="user-comment" class="form-label"> Comment</label>
-            <div>
               <textarea
                 id="user-comment"
-                name="comment"
+                name="user-comment"
                 rows="5"
                 placeholder="Text input"
                 class="form-textarea"
               ></textarea>
-            </div>
           </div>
           <div class="checkbox-container">
             <input
@@ -621,10 +620,11 @@
               id="user-privacy"
               value="true"
               name="user-privacy"
+              required
             />
             <label for="user-privacy" class="policy">
               <span class="label-span">
-                <svg class="span-svg" width="16" height="16">
+                <svg class="span-svg" width="10" height="16">
                   <use href="./images/icons.svg#checked"></use>
                 </svg>
               </span>
