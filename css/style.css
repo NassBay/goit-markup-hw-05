@@ -669,6 +669,11 @@ img {
 .input-wrap:hover .form-icon,
 .input-wrap:focus .form-icon {
   fill: #4D5AE5;
+} 
+
+input:hover .form-icon,
+input:focus .form-icon {
+  fill: #4D5AE5;
 }
 
 .form-textarea-box {
