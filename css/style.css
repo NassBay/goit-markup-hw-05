@@ -647,9 +647,10 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-wrap:hover input,
-.input-wrap:focus input {
+.input-wrap input:hover,
+.input-wrap input:focus {
   border-color: #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .input-wrap {
@@ -739,6 +740,9 @@ img {
 .checkbox:checked + .policy span {
   background-color: #404bbf;
   border: none;
+}
+
+.checkbox:checked .label-span {
   fill: #f4f4f4;
 }
 
